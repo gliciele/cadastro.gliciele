@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+
+<meta nome="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="#style.css">
+
+<link rel="stylesheet" href="bootstrap.js/css/bootstrap.min.css">
+
+<title>Idas e Vinhos</title>
+
+</head>
+
+<body style="background-color: white;">
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-sm">
+
+<div class="fixed-top-bottom">
+
+<center>
+
+<h1 style="color:black;">Cadastre-se</h1>
+
+</center>
+
+<hr>
+
+<div class="col-md-6 control-label">
+
+<p class="help-block"><b style="color: red;"><h11>*</h11> Campo Obrigatório </b></p>
+
+</div>
+
+</hr>
+
+<fieldset>
+
+<div class="form-group">
+
+<label class="col-md-6 control-label" for="nome"><b>Nome</b><h11 style="color: red;">*</h11></label>
+
+<div class="col-md-6">
+
+<input id="nome" name="nome" class="form-control input-md" required="" type="text">
+
+</div>
+
+</div>
+
+<div class="form-group">
+
+<label class="col-md-6 control-label" for="sobrenome"><b>Sobrenome</b><h11 style="color: red;">*</h11></label>
+
+<div class="col-md-6">
+
+<input id="sobrenome" name="sobrenome" class="form-control input-md" required="" type="text">
+
+</div>
+
+</div>
+
+<div class="form-group">
+
+<label class="col-md-6 control-label" for="Nome"><b>CPF</b><h11 style="color: red;">*</h11></label>
+
+<div class="col-md-6">
+
+<input id="cpf" name="cpf" placeholder="Apenas números" class="form-control input-md" required="" type="text">
+
+</div>
+
+</div>
+
+<label class="col-md-6 control-label" for="Nome"><b>Nascimento</b><h11 style="color: red;">*</h11></label>
+
+<div class="col-md-6">
+
+<input id="dtnasc" name="dtnasc" placeholder="DD/MM/AAAA" class="form-control input-md" required="" type="text">
+
+</div>
+
+<hr>
+
+<label class="col-md control-label" for="radios"><b>Sexo</b><h11 style="color: red;">*</h11></label>
+
+<label required="" class="radio-inline" for="radios-0" >
+
+<input name="sexo" id="sexo" value="feminino" type="radio" required>
+
+Feminino
+
+</label>
+
+<label class="radio-inline" for="radios-1">
+
+<input name="sexo" id="sexo" value="masculino" type="radio" required>
+
+Masculino
+
+</label>
+
+<label class="radio-inline" for="radios-2">
+
+<input name="sexo" id="sexo" value="outro" type="radio" required>
+
+Outro
+
+</label>
+
+</hr>
+
+<hr>
+
+<div class="form-group">
+
+<label class="col-md-6 control-label" for="prependedtext"><b>Telefone</b><h11 style="color: red;">*</h11></label>
+
+<div class="col-md-6">
+
+<div class="input-group">
+
+<span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+
+<input id="prependedtext" name="prependedtext" class="form-control" placeholder="(XX) XXXXX-XXXX" required="" type="text"
+
+OnKeyPress="formatar('## #####-####', this)">
+
+</div>
+
+</div>
+
+</hr>
+
+<div class="form-group">
+
+<label class="col-md-6 control-label" for="prependedtext"><b>E-mail</b></label>
+
+<div class="col-md-6">
+
+<div class="input-group">
+
+<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+
+<input id="prependedtext" name="prependedtext" class="form-control" placeholder="email@email.com" required="" type="text">
+
+</div>
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="form-group">
+
+<label class="col-md-6 control-label" for="CEP"><b>CEP</b><h11 style="color: red;">*</h11></label>
+
+<div class="col-md-6">
+
+<input id="cep" name="cep" placeholder="XXXXX-XXX" class="form-control input-md" required="" value="" type="search">
+
+</div>
+
+<div class="btn">
+
+<button type="button" class="btn btn-primary" onclick=""><b>Pesquisar</button>
+
+</div>
+
+</div>
+
+<div class="form-group">
+
+<label class="col-md-6 control-label" for="prependedtext"><b>Endereço</b><h11 style="color: red;">*</h11></label>
+
+<div class="col-md-6">
+
+<input id="rua" name="rua" class="form-control" required="" placeholder="Rua e número" type="text">
+
+</div>
+
+</diV>
+
+<div class="form-group">
+
+<label class="col-md-6 control-label" for="prependedtext"><b>Complemento</b></label>
+
+<div class="col-md-6">
+
+<input id="compl" name="compl" class="form-control" required="" placeholder="BL/Apto..." type="text">
+
+</div>
+
+</diV>
+
+<div class="form-group">
+
+<label class="col-md-6 control-label" for="prependedtext"><b>Cidade</b><h11 style="color: red;">*</h11></label>
+
+<div class="col-md-6">
+
+<input id="city" name="city" class="form-control" required="" type="text">
+
+</div>
+
+</diV>
+
+<div class="col-md-6">
+
+<div class="form-group">
+
+<span class="input-group-addon"><b>Estado</b><h11 style="color: red;">*</h11></label></span>
+
+<input id="estado" name="estado" class="form-control" required="" type="text">
+
+</div>
+
+</div>
+
+<div class="col-md-6">
+
+<div class="form-group">
+
+<span class="input-group-addon"><b>País</b><h11 style="color: red;">*</h11></label></span>
+
+<input id="pais" name="pais" class="form-control" required="" type="text">
+
+</div>
+
+</div>
+
+</hr>
+
+<div class="form-group row">
+
+<div class="col-md-6">
+
+<div class="button">
+
+<button type="button" class="btn btn-success" onclick="">Enviar</button>
+
+</div>
+
+</div>
+
+<div style="text-align: right;">
+
+<div class="button">
+
+<button type="clean" class="btn btn-danger" onclick="">Cancelar</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script type="text/javascript" src="jquery.js"></script>
+
+<script type="text/javascript" src="bootstrap.js/js/bootstrap.min.js"></script>
+
+</div>
+
+</fieldset>
+</form>
+</body>
+</html>
